@@ -11,27 +11,18 @@ darker: #696157
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+html {
+    /*font-size: 62.5px;*/
+}
+
 
 body {
   font-family: 'Libre Baskerville', sans-serif;
-  font-size: 62.5px;
+  /*font-size: 62.5px;*/
 }
 
 
@@ -40,26 +31,40 @@ body {
 /*******************************************/
 .promo {
   display: flex;
-  flex-basis: 66%;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #d8bfab;
+  padding: 10px 0;
 }
 
 .whiteBtn {
   background-color: white;
   color:#696157;
-  border-radius: 5px;
   width: 200px;
-  text-align: center;
-  padding: 10px 12px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 10px 40px;
+
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 h3, #download {
+  
+}
+
+h3 {
+  color: #696157; 
+  font-style: italic;
+  letter-spacing: 0.15em;
   font-size: 1rem;
 }
 
 #download {
   text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color:#696157;
+  font-size: 14px;
 }
