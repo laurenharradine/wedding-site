@@ -1,0 +1,65 @@
+/*
+COLOURS
+light: #d8bfab
+darker: #696157
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 62.5px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.promo {
+  display: flex;
+  flex-basis: 66%;
+  justify-content: space-between;
+}
+
+.whiteBtn {
+  background-color: white;
+  color:#696157;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  padding: 10px 12px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h3, #download {
+  font-size: 1rem;
+}
+
+#download {
+  text-decoration: none;
+}
