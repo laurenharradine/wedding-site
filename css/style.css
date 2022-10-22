@@ -26,7 +26,7 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-.promo {
+.promo, #reviews {
   display: flex;
   justify-content: center;
   background-color: #d8bfab;
@@ -41,6 +41,13 @@ body {
   display: flex;
   align-items: center;
   margin: 10px 40px;
+
+}
+
+.whiteBtnQuote {
+  width: auto;
+  padding: 15px 20px;
+  margin: 10px 30px;
 
 }
 
@@ -65,7 +72,7 @@ body {
   background-color: white;
 }
 
-#aboutUs, #getToKnow, #sneakPeak{
+#aboutUs, #getToKnow, #sneakPeak, #reviews{
   display: flex;
   justify-content: center;
   margin-top: 0;
@@ -78,11 +85,80 @@ body {
 }
 
 #sneakPeak div {
-  width: 66vw;
+  width: 45vw;
   text-align: center;
   padding-bottom: 20px;
 }
 
+#reviews {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 5vw;
+}
+
+.revBox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px 20px;
+  margin: 0 20px;
+  height: 500px;
+}
+
+#flawless {
+  background-image: url("https://laurenharradine.github.io/wedding-site/images/bg2.jpg");
+  background-size: cover;                
+  background-repeat:   no-repeat;
+  height: 500px;
+  padding: 30px 20vw 10px 20vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 5vw;
+  height: 225px;
+  background-color: #696157;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lhs {
+  justify-content: flex-start;
+}
+
+.rhs {
+  text-align: right;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer, .footer div{
+  border: 1px solid red;
+}
+
+.lhs, .rhs {
+  flex: 1;
+}
+
+.cent {
+  flex: 3;
+  text-align: center;
+  justify-content: center;
+  padding: 0 40px;
+}
 
 
 /******************************************
@@ -109,13 +185,28 @@ h3 {
   font-size: 1rem;
 }
 
+h5 {
+  letter-spacing: 0.15em;
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-family: 'WindSong', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4, h5, h6 {
   color: #696157;
 }
 
@@ -130,6 +221,28 @@ p, h1, h2, h3 {
 .lessMargin {
   margin-bottom: 10px;
 }
+
+.spaced {
+  letter-spacing: 0.15em;
+  line-height: 1.5em;
+}
+
+.revBox p {
+  font-style: italic;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cent p {
+  color: #f1e7e2;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* .revBox, .revBox p {
+  border: 1px solid red;
+} */
 
 #download, .navbar, .centered {
   font-weight: 700;
@@ -162,7 +275,7 @@ nav {
   background-color: white;
 }
 
-ul {
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -170,6 +283,30 @@ ul {
   padding-left: 0;
 }
 
+#btm {
+  list-style: none;
+}
+
+#btm li {
+  margin: 10px 0px
+}
+
+footer a, .rhs p {
+  color: #f1e7e2;
+  font-size: 12px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.rhs p {
+  line-height: 15px;
+  text-align: right;
+
+}
+
+footer a:hover {
+  color: white;
+}
 .navbar:hover {
   color: #878179;
 }
@@ -184,11 +321,11 @@ ul {
 }
 
 .pf-gap {
-  height: 50px;
+  height: 30px;
 }
 
 .pf-container {
-  max-width: 66vw;
+  max-width: 45vw;
   position: relative;
   margin: auto;
   background-color: #f1e7e2;
@@ -294,6 +431,12 @@ ul {
   border-radius: 50%;
   width: 30vw;
 }
+
+.smallCircle {
+  width: 15vw;
+  /* border-radius: 50%; */
+}
+
 
 
 
