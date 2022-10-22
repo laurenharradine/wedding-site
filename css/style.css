@@ -18,6 +18,7 @@ pinkish: #f1e7e2
 /*******************************************/
 body {
   font-family: 'Libre Baskerville', sans-serif;
+  background-color: #f1e7e2;
   /*font-size: 62.5px;*/
 }
 
@@ -46,6 +47,7 @@ body {
 .headerMiddle {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 #socmedDiv {
@@ -59,11 +61,11 @@ body {
   margin: 20px 20px;
 }
 
-#aboutUs {
-  background-color: #f1e7e2;
+#getToKnow {
+  background-color: white;
 }
 
-#aboutUs, #getToKnow{
+#aboutUs, #getToKnow, #sneakPeak{
   display: flex;
   justify-content: center;
   margin-top: 0;
@@ -73,6 +75,12 @@ body {
 #aboutUs div, #getToKnow div {
   width: 33vw;
   padding: 20px 20px;
+}
+
+#sneakPeak div {
+  width: 66vw;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -88,23 +96,39 @@ h1 {
   margin-top: 0;
 }
 
+h2 { 
+  letter-spacing: 0.15em;
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
 h3 { 
   font-style: italic;
   letter-spacing: 0.15em;
   font-size: 1rem;
 }
 
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-p, h1, h3 {
+p, h1, h2, h3 {
   color: #696157;
 }
 
 .embolden{
   font-weight: 700;
+}
+
+.smaller{
+  font-size: 13px;
+}
+
+.lessMargin {
+  margin-bottom: 10px;
 }
 
 #download, .navbar, .centered {
@@ -135,6 +159,7 @@ nav {
   border-top: 1px solid #eae6e4;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 ul {
@@ -158,13 +183,22 @@ ul {
   /*border: 1px solid red;*/
 }
 
-.slideshow-container * {
-  /*border: 1px solid greenyellow;*/
+.pf-gap {
+  height: 50px;
+}
+
+.pf-container {
+  max-width: 66vw;
+  position: relative;
+  margin: auto;
+  background-color: #f1e7e2;
+  /*border: 1px solid red;*/
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides, .pf {
   display: none;
+  
 }
 
 /* Next & previous buttons */
@@ -238,6 +272,7 @@ ul {
 #circles {
   text-align:center;
   background-color: #f1e7e2;
+  margin: 10px 0;
 }
 
 .active, .dot:hover {
