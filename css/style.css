@@ -238,6 +238,11 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+
+.revBox h5 {
+  text-align: center;
+}
+
 .cent p {
   color: #f1e7e2;
   line-height: 30px;
@@ -442,6 +447,13 @@ footer a:hover {
   /* border-radius: 50%; */
 }
 
+@media only screen and (max-width: 1900px) {
+  .revBox {
+    height: 600px;
+  }
+}
+
+
 @media only screen and (max-width: 1200px) {
   .revBox {
     height: 400px;
@@ -450,9 +462,9 @@ footer a:hover {
     display: none;
   }
 
-  .revBox h5 {
+  /* .revBox h5 {
     text-align: center;
-  }
+  } */
 
   #flawless {
     width: 100vw;
