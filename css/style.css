@@ -55,9 +55,25 @@ body {
 
 }
 
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #696157;
+}
+
 .headerMiddle {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
@@ -543,7 +559,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  nav, #getToKnow, .pf-container, #circles, #sneakPeak, #reviews, #socmedDiv, footer, .text{
+  /*nav,*/ #getToKnow, .pf-container, #circles, #sneakPeak, #reviews, #socmedDiv, footer, .text{
     display: none;
   }
 
@@ -594,5 +610,42 @@ footer a:hover {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 38vh;
+  }
+
+  .navbar{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left:0;
   }
 }
